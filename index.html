@@ -5,7 +5,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <style></style>
+    <style>
+      #patient {
+        display: flex;
+        height: auto;
+        margin: 10px;
+      }
+      #register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
+        background-color: whitesmoke;
+        padding: 50px;
+        border-style: solid;
+        border-color: red;
+        border-radius: 15px;
+      }
+      h2 {
+        font-family: Ink Free;
+        text-align: center;
+      }
+      input {
+        padding: 20px;
+        margin: 10px;
+        width: 400px;
+        border-style: solid;
+        border-color: red;
+        border-radius: 15px;
+      }
+      .submit {
+        width: 200px;
+        background-color: green;
+        color: white;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .retrive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
+        background-color: whitesmoke;
+        height: 300px;
+        padding: 50px;
+        border-style: solid;
+        border-color: red;
+        border-radius: 15px;
+      }
+      }
+    </style>
   </head>
   <body style="background-color: white">
     <header>
@@ -13,9 +65,9 @@
         <div class="navbar" id="nav">
           <nav>
             <a href="#nav">Home</a>
-            <a href="#Projects">New patient</a>
-            <a href="#Skills">Patient Details</a>
-            <a href="#About">Health articles</a>
+            <a href="#patient">New patient</a>
+            <a href="#patient">Patient Details</a>
+            <a href="#article">Health articles</a>
           </nav>
         </div>
         <div>
@@ -32,7 +84,41 @@
         </div>
       </div>
     </header>
-
+    <div id="patient">
+      <div class="register">
+        <form action="./script.js" id="register">
+          <h2>Are you new? Start by registering</h2>
+          <input type="text" placeholder="Patient's name" id="name" />
+          <input type="number" placeholder="Patient's height" id="height" />
+          <input type="number" placeholder="Patient's mass" id="mass" />
+          <input type="number" placeholder="Patient's age" id="age" />
+          <input type="text" placeholder="Date of registration" id="date" />
+          <input
+            type="submit"
+            class="submit"
+            value="Register"
+            style="cursor: pointer"
+          />
+        </form>
+      </div>
+      <div>
+      <div class="retrive">
+        <h2>Find a patient</h2>
+        <input type="number" id="retrive" placeholder="Enter patient's ID" />
+        <input
+          type="button"
+          value="Submit"
+          style="
+            width: 200px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+          "
+        />
+      </div>
+      
+      </div>
+    </div>
     <footer style="background-color: #5b2c6f; padding: 20px; color: orange">
       <marquee direction="right"
         ><p style="color: white; text-align: center">
