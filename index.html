@@ -1,61 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Henry Software Developers</title>
+    <title>Henry wellness center</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/style.css" />
     <style>
-      #patients {
-        display: flex;
-        height: auto;
-        margin: 10px;
-      }
-      #register {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 100px;
-        background-color: whitesmoke;
-        padding: 50px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 15px;
-      }
-      h2 {
-        font-family: Ink Free;
-        text-align: center;
-      }
-      input {
-        padding: 20px;
-        margin: 10px;
-        width: 400px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 15px;
-      }
-      .submit {
-        width: 200px;
-        background-color: green;
-        color: white;
-      }
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      .retrive{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 100px;
-        background-color: whitesmoke;
-        height: 300px;
-        padding: 50px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 15px;
-      }
       
     </style>
   </head>
@@ -72,7 +22,7 @@
         </div>
         <div>
           <h1 style="text-align: center; font-size: 60px; color: red">
-            Welcome to the Henry wellness<br />We are here to help you.<br />Shall
+            Welcome to the Henry wellness center<br />We are here to help you.<br />Shall
             we begin our journey....
           </h1>
           <button
@@ -89,13 +39,13 @@
     <div id="patients">
       
       <div class="register">
-        <form action="./script.js" id="register">
+        <form action="" id="register" method="post">
           <h2>Are you new? Start by registering</h2>
-          <input type="text" placeholder="Patient's name" id="name" />
-          <input type="number" placeholder="Patient's height" id="height" />
-          <input type="number" placeholder="Patient's mass" id="mass" />
-          <input type="number" placeholder="Patient's age" id="age" />
-          <input type="text" placeholder="Date of registration" id="date" />
+          <input type="text" required placeholder="Patient's name" id="name" />
+          <input type="number" required placeholder="Patient's height" id="height" />
+          <input type="number" required placeholder="Patient's mass" id="mass" />
+          <input type="number" required placeholder="Patient's age" id="age" />
+          <input type="text" required placeholder="Date of registration" id="date" />
           <input
             type="submit"
             class="submit"
@@ -104,12 +54,13 @@
           />
         </form>
       </div>
-      <div>
+      <div">
       <div class="retrive">
         <h2>Find a patient</h2>
+        <form action="" method="get" id="result"></form>
         <input type="number" id="retrive" placeholder="Enter patient's ID" />
         <input
-          type="button"
+          type="submit"
           value="Submit"
           style="
             width: 200px;
@@ -117,8 +68,17 @@
             color: white;
             cursor: pointer;
           "
+          required
         />
       </div>
+      <div style="margin-left: 100px;">
+        <h2>Patient's Details</h2>
+      <h3>Patient's name: <span id="rname"></span></h3>
+      <h3>Patient's height: <span id="rheight"></span></h3>
+      <h3>Patient's mass: <span id="rmass"></span></h3>
+      <h3>Patient's age: <span id="rage"></span></h3>
+      <h3>Date of registration: <span id="rdate"></span></h3>
+    </div>
     </div>
       </div>
     </div>
@@ -129,5 +89,6 @@
         </p></marquee
       >
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
