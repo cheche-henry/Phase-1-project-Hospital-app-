@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: whitesmoke;
+  opacity: 0.3;
+  top: 0;
+  width: 100%;
+  height: 90px;
+}
+nav {
+  float: right;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  margin: 20px;
+  margin-bottom: 15px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-style: dotted;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 550px;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Ink Free;
+}
+.landing {
+  background-image: url(https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
