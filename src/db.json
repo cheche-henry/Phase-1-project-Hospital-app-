@@ -1,0 +1,13 @@
+{
+  "patients": [
+    {
+      "name": "Henry",
+      "height": "69",
+      "mass": "69",
+      "age": "69",
+      "date": "4/7/2022",
+      "id": 1
+    }
+  ],
+  "articles": []
+}
