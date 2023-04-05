@@ -1,3 +1,4 @@
+/* Set box-sizing for all elements */
 * {
   box-sizing: border-box;
 }
@@ -44,6 +45,7 @@ nav {
   padding: 20px;
 }
 
+/* Style the button */
 button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -57,21 +59,28 @@ button {
   cursor: pointer;
 }
 
+/* Style the heading */
 h1 {
   font-family: Ink Free;
-  color: red;
+  color: green;
   text-align: center;
 }
+
+/* Style the landing section */
 .landing {
   background-image: url(https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Style the section with ID 'patients' */
 #patients {
   display: flex;
   height: auto;
   margin: 10px;
 }
+
+/* Style the section with ID 'register' */
 #register {
   display: flex;
   flex-direction: column;
@@ -80,31 +89,42 @@ h1 {
   background-color: whitesmoke;
   padding: 50px;
   border-style: solid;
-  border-color: red;
+  border-color: whitesmoke;
   border-radius: 15px;
 }
+
+/* Style the heading within the section with ID 'register' */
 h2 {
   font-family: Ink Free;
   text-align: center;
+  color: green;
 }
+
+/* Style the input fields */
 input {
   padding: 20px;
   margin: 10px;
   width: 400px;
   border-style: solid;
-  border-color: red;
+  border-color: grey;
   border-radius: 15px;
 }
+
+/* Style the submit button */
 .submit {
   width: 200px;
   background-color: green;
   color: white;
 }
+
+/* Remove spinner from number input fields in some browsers */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Style the section with class 'retrieve' */
 .retrive {
   display: flex;
   flex-direction: column;
@@ -114,6 +134,6 @@ input::-webkit-inner-spin-button {
   height: 300px;
   padding: 50px;
   border-style: solid;
-  border-color: red;
+  border-color: whitesmoke;
   border-radius: 15px;
 }

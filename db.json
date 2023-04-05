@@ -1,5 +1,37 @@
 {
   "patients": [
-    
+    {
+      "name": "Random guy",
+      "height": "100",
+      "mass": "60",
+      "age": "50",
+      "date": "4/7/2022",
+      "id": 1
+    },
+    {
+      "name": "Random guy",
+      "height": "23",
+      "mass": "23",
+      "age": "23",
+      "date": "4/7/2022",
+      "id": 2
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Brave Little Toaster",
+      "summary": "A group of appliances set off on a journey"
+    },
+    {
+      "id": 2,
+      "title": "The Princess Bride",
+      "summary": "A mix of swashbuckling, romance, and comedy"
+    },
+    {
+      "id": 3,
+      "title": "Spirited Away",
+      "summary": "A young girl works to reunite with her parents while trapped in a supernatural realm"
+    }
   ]
 }
