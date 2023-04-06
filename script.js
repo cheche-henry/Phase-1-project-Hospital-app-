@@ -157,20 +157,3 @@ fetch("https://hospitalapp.onrender.com/articles")
     })
     .catch((error) => console.error(error));
 
-const deleteAllButton = document.querySelector("#delete-all");
-
-deleteAllButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  
-  fetch("https://hospitalapp.onrender.com/articles/1", {
-    method: "DELETE",
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("All articles deleted successfully!");
-      } else {
-        throw new Error("Could not delete articles.");
-      }
-    })
-    .catch((error) => console.error(error));
-});
