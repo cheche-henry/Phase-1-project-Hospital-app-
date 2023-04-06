@@ -5,9 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <style>
-      
-    </style>
+    <style></style>
   </head>
   <body style="background-color: white">
     <header>
@@ -22,8 +20,8 @@
         </div>
         <div>
           <h1 style="text-align: center; font-size: 60px; color: white">
-            Welcome to the Henry wellness center<br />We are here to help you.<br />Shall
-            we begin our journey....
+            Welcome to the Henry wellness center<br />We are here to help
+            you.<br />Shall we begin our journey....
           </h1>
           <button
             style="text-align: center"
@@ -35,52 +33,120 @@
       </div>
     </header>
     <div id="patient">
-      <h1 style="font-size: 45px;">Patient,s Registration</h1>
-    <div id="patients">
-      
-      <div class="register">
-        <form action="" id="register" method="post">
-          <h2>Are you new? Start by registering</h2>
-          <input type="text" required placeholder="Patient's name" id="name" />
-          <input type="number" required placeholder="Patient's height" id="height" />
-          <input type="number" required placeholder="Patient's mass" id="mass" />
-          <input type="number" required placeholder="Patient's age" id="age" />
-          <input type="text" required placeholder="Date of registration" id="date" />
+      <h1 style="font-size: 45px">Patient,s Registration</h1>
+      <div id="patients">
+        <div class="register">
+          <form action="" id="register" method="post">
+            <h2>Are you new? Start by registering</h2>
+            <input
+              type="text"
+              required
+              placeholder="Patient's name"
+              id="name"
+            />
+            <input
+              type="number"
+              required
+              placeholder="Patient's height"
+              id="height"
+            />
+            <input
+              type="number"
+              required
+              placeholder="Patient's mass"
+              id="mass"
+            />
+            <input
+              type="number"
+              required
+              placeholder="Patient's age"
+              id="age"
+            />
+            <input
+              type="text"
+              required
+              placeholder="Date of registration"
+              id="date"
+            />
+            <input
+              type="submit"
+              class="submit"
+              value="Register"
+              style="cursor: pointer"
+            />
+          </form>
+        </div>
+        <div">
+        <div class="retrive">
+          <h2>Find a patient</h2>
+          <form id="form">
+            <label for="searchByID">Search By ID</label>
+            <input id="searchByID" type="text" placeholder="Enter ID here" />
+            <input type="submit" class="submit" style="margin-left: 100px; cursor: pointer;"/>
+          </form>
+          <div style="justify-content: left;">
+            <h2>Patient's Details</h2>
+            <section id="patientsDetails">
+              <h3>Patient's name: <span id="rname"></span></h3>
+            
+              <h3>Patient's height: <span id="rheight"></span></h3>
+              <h3>Patient's age: <span id="rage"></span></h3>
+              <h3>Patient's mass: <span id="rmass"></span></h3>
+              <h3>Date of registration: <span id="rdate"></span></h3>
+              
+            </section>
+            <button id="delete" style="margin-left: 0px; background-color: blueviolet;">Delete patient</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="articles">
+      <h2>Read some of our articles</h2>
+      <div id="showall"></div>
+      <div id="details"></div>
+      <div class="write">
+        <form action="" id="write" method="post">
+          <h2>Write an health article</h2>
+          <input
+            type="text"
+            required
+            placeholder="Enter article's title"
+            id="title"
+          />
+          <input
+            type="text"
+            required
+            placeholder="Enter author's name(Your name)"
+            id="author"
+          />
+        
+          <input type="text"
+          required
+          placeholder="Add an image to be displayed"
+          id="image"
+        />
+        <textarea id="article" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+        
+        
           <input
             type="submit"
             class="submit"
-            value="Register"
-            style="cursor: pointer"
+            value="Submit article"
+            style="cursor: pointer; width: 200px;"
           />
         </form>
       </div>
-      <div">
-      <div class="retrive">
-        <h2>Find a patient</h2>
-        <form id="form">
-          <label for="searchByID">Search By ID</label>
-          <input id="searchByID" type="text" placeholder="Enter ID here"/>
-          <input type="submit" />
-        </form>
-      <div style="margin-left: 100px;">
-        <section id="movieDetails">
-          <span id="rname"></span>
-          <span id="rheight"></span>
-          <span id="rage"></span>
-          <span id="rmass"></span>
-          <span id="rdate"></span>
-        </section>
+
     </div>
-    </div>
-      </div>
-    </div>
-    <footer style="background-color: #28B463 ; padding: 20px; color: orange">
+    <footer style="background-color: #82E0AA; padding: 20px; color: orange">
       <marquee direction="right"
         ><p style="color: white; text-align: center">
           Copyright © 2023 by Henry. All Rights Reserved.
         </p></marquee
       >
     </footer>
+  <p id="delete-all">Delete</p>
     <script src="./script.js"></script>
   </body>
 </html>
