@@ -32,7 +32,7 @@ registerForm.addEventListener("submit", function (e) {
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
-    
+
     .then((data) => {
       alert(`Patient ${data.name} registered successfully!`);
     })
@@ -61,7 +61,7 @@ inputForm.addEventListener("submit", (event) => {
       const massSpan = document.querySelector("#rmass");
       const ageSpan = document.querySelector("#rage");
       const dateSpan = document.querySelector("#rdate");
-      
+
       heightSpan.innerText = data.height;
       massSpan.innerText = data.mass;
       ageSpan.innerText = data.age;
@@ -71,7 +71,7 @@ inputForm.addEventListener("submit", (event) => {
     })
     .catch((error) => {
       console.error('Error:', error);
-      
+
     });
 });
 
@@ -79,7 +79,7 @@ inputForm.addEventListener("submit", (event) => {
 const erase = document.querySelector('#delete');
 
 erase.addEventListener('click', function () {
-  
+
   const input = document.querySelector('input#searchByID');
   fetch(`https://hospitalapp.onrender.com/patients/${input.value}`, {
     method: 'DELETE',
@@ -101,16 +101,16 @@ articleForm.addEventListener("submit", function (e) {
   const author = document.querySelector("#author").value;
   const image = document.querySelector("#image").value;
   const article = document.querySelector("#article").value;
-  
-  
+
+
   // Assign all input values to one variable for easy posting
   const data = {
     title,
     author,
     image,
     article,
-    
-    
+
+
   };
   // Post details of new patient to the db.json
   fetch("https://hospitalapp.onrender.com/articles", {
@@ -121,7 +121,7 @@ articleForm.addEventListener("submit", function (e) {
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
-    
+
     .then((data) => {
       alert(`Article posted successfully!`);
     })
@@ -131,18 +131,18 @@ articleForm.addEventListener("submit", function (e) {
 const container = document.querySelector("#articles-container");
 
 fetch("https://hospitalapp.onrender.com/articles")
-    .then((response) => response.json())
-    .then((data) => {
-      // Loop through the articles and create a new element for each item
-      data.forEach((article) => {
-        // Create a new div element for each article
-        const articleDiv = document.createElement("div");
-        
-        // Set the class name for the div element
-        articleDiv.className = "article";
-      
-        // Add the title and image to the div element
-        articleDiv.innerHTML = `
+  .then((response) => response.json())
+  .then((data) => {
+    // Loop through the articles and create a new element for each item
+    data.forEach((article) => {
+      // Create a new div element for each article
+      const articleDiv = document.createElement("div");
+
+      // Set the class name for the div element
+      articleDiv.className = "article";
+
+      // Add the title and image to the div element
+      articleDiv.innerHTML = `
         
           
           <div class="test" style="background-image:url(${article.image})">
@@ -150,10 +150,10 @@ fetch("https://hospitalapp.onrender.com/articles")
           <p style="color:black;">${article.article}</p>
           </div>
         `;
-        
-        // Add the new div element to the container
-        showall.appendChild(articleDiv);
-      });
-    })
-    .catch((error) => console.error(error));
+
+      // Add the new div element to the container
+      showall.appendChild(articleDiv);
+    });
+  })
+  .catch((error) => console.error(error));
 

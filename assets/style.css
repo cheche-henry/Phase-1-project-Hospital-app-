@@ -21,6 +21,7 @@ body {
 nav {
   float: right;
 }
+
 /* Style the navigation bar links */
 .navbar a {
   float: left;
@@ -29,8 +30,7 @@ nav {
   text-align: center;
   padding: 14px 20px;
   font-size: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
   margin: 20px;
   margin-bottom: 15px;
@@ -137,15 +137,20 @@ input::-webkit-inner-spin-button {
   border-color: whitesmoke;
   border-radius: 15px;
 }
-#write{
+
+/*Style the div element with ID 'write' */
+#write {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-#write input{
+/* Style the input fields under the div element with ID 'write' */
+#write input {
   width: 750px;
 }
-#article{
+
+/* Style the article section */
+#article {
   padding: 20px;
   margin: 10px;
   width: 750px;
@@ -153,47 +158,43 @@ input::-webkit-inner-spin-button {
   border-color: grey;
   border-radius: 15px;
 }
+
+/* Style the section with ID 'showall' */
 #showall {
   display: flex;
   flex-direction: row;
   background-color: whitesmoke;
-  
 }
-.article{
+/* Style the articles within the 'showall' section */
+.article {
   align-items: center;
   border-style: none;
   border-radius: 15px;
-  
-  
   margin: 30px;
   display: inline-block;
   width: 30%;
-  
- 
-  
-  
 }
 
-.test{
+/* Style the test class */
+.test {
   background-repeat: no-repeat;
   background-size: cover;
-  
   place-items: center;
 }
+
+/* Style the heading contained within the articles */
 .article h3 {
   text-align: center;
   margin-top: 50px;
   margin-left: 100px;
   width: 50%;
   color: red;
-  
   padding: 10px;
-  
 }
 
+/* Style the image contained within the articles */
 .article img {
   width: 150px;
   height: auto;
   margin-left: 100px;
-  
-}
+} 

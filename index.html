@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Set the title of the page -->
     <title>Henry wellness center</title>
+    <!-- Set character encoding and viewport for responsiveness -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="./assets/style.css" />
     <style></style>
   </head>
   <body style="background-color: white">
+    <!-- Page Header -->
     <header>
       <div class="landing" id="Home" style="height: 600px">
+        <!-- Navigation Bar -->
         <div class="navbar" id="nav">
           <nav>
             <a href="#nav">Home</a>
             <a href="#patient">New patient</a>
             <a href="#patient">Patient Details</a>
-            <a href="#article">Health articles</a>
+            <a href="#articles">Health articles</a>
           </nav>
         </div>
+        <!-- Main Heading and Button -->
         <div>
           <h1 style="text-align: center; font-size: 60px; color: white">
             Welcome to the Henry wellness center<br />We are here to help
@@ -32,9 +38,11 @@
         </div>
       </div>
     </header>
+    <!-- Patient Registration Section -->
     <div id="patient">
       <h1 style="font-size: 45px">Patient,s Registration</h1>
       <div id="patients">
+        <!-- Registration Form -->
         <div class="register">
           <form action="" id="register" method="post">
             <h2>Are you new? Start by registering</h2>
@@ -76,34 +84,48 @@
             />
           </form>
         </div>
-        <div">
+        <!-- Patient Details and Search Form -->
+        <div>
         <div class="retrive">
           <h2>Find a patient</h2>
           <form id="form">
             <label for="searchByID">Search By ID</label>
             <input id="searchByID" type="text" placeholder="Enter ID here" />
-            <input type="submit" class="submit" style="margin-left: 100px; cursor: pointer;"/>
+            <input
+              type="submit"
+              class="submit"
+              style="margin-left: 100px; cursor: pointer"
+            />
           </form>
-          <div style="justify-content: left;">
+          <div style="justify-content: left">
             <h2>Patient's Details</h2>
             <section id="patientsDetails">
+              <!-- Show Patient's details using spans with unique IDs -->
               <h3>Patient's name: <span id="rname"></span></h3>
-            
               <h3>Patient's height: <span id="rheight"></span></h3>
               <h3>Patient's age: <span id="rage"></span></h3>
               <h3>Patient's mass: <span id="rmass"></span></h3>
               <h3>Date of registration: <span id="rdate"></span></h3>
-              
             </section>
-            <button id="delete" style="margin-left: 0px; background-color: blueviolet;">Delete patient</button>
+            <!-- Delete Patient Button -->
+            <button
+              id="delete"
+              style="margin-left: 0px; background-color: blueviolet"
+            >
+              Delete patient
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <!-- Health Articles Section -->
     <div id="articles">
       <h2>Read some of our articles</h2>
+      <!-- Div to show all the available articles -->
       <div id="showall"></div>
+      <!-- Div to show individual article details -->
       <div id="details"></div>
+      <!-- Article Submission Form -->
       <div class="write">
         <form action="" id="write" method="post">
           <h2>Write an health article</h2>
@@ -119,34 +141,39 @@
             placeholder="Enter author's name(Your name)"
             id="author"
           />
-        
-          <input type="text"
-          required
-          placeholder="Add an image to be displayed"
-          id="image"
-        />
-        <textarea id="article" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-        
-        
+
+          <input
+            type="text"
+            required
+            placeholder="Add an image to be displayed"
+            id="image"
+          />
+          <textarea
+            id="article"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
           <input
             type="submit"
             class="submit"
             value="Submit article"
-            style="cursor: pointer; width: 200px;"
+            style="cursor: pointer; width: 200px"
           />
         </form>
       </div>
-
     </div>
-    <footer style="background-color: #82E0AA; padding: 20px; color: orange">
+    <!-- Footer Section -->
+    <footer style="background-color: #82e0aa; padding: 20px; color: orange">
+      <!-- Marquee to display footer text -->
       <marquee direction="right"
         ><p style="color: white; text-align: center">
           Copyright © 2023 by Henry. All Rights Reserved.
         </p></marquee
       >
     </footer>
-  
+    <!-- Import Javascript file -->
     <script src="./script.js"></script>
   </body>
 </html>
