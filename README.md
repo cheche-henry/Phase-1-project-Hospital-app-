@@ -21,3 +21,5 @@
 
 ## Developer
    This project was created by Henry Cheche
+## License
+   MIT license(https://github.com/cheche-henry/Phase-1-project-Hospital-app-/blob/main/license)
