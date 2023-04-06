@@ -5,14 +5,14 @@
 
 ## Project Description
    ### Technologies used
-   The web application is utilizes: HTML, CSS, Javascripit and JSON server
+   The web application is utilizes: <br />HTML<br /> CSS<br /> Javascripit <br /> JSON server
 
    ### Minimum viable product
-   As a user I can:<br />
-   Enter a patient’s details(height, age, mass, registration date).<br />
-   Retrieve a patient’s details by searching a patient’s ID.<br />
-   Delete a patient from database.<br />
-   Read and write articles.
+   >As a user I can:<br />
+   >Enter a patient’s details(height, age, mass, registration date).<br />
+   >Retrieve a patient’s details by searching a patient’s ID.<br />
+   >Delete a patient from database.<br />
+   >Read and write articles.
 
    ### Live links
    Website link :<br />
